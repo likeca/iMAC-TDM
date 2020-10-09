@@ -1,6 +1,15 @@
 # Disable iMac bluetooth keyboard auto-request
 Open the Bluetooth pane in System Preferences. Click the Advanced button. Uncheck the boxes marked  
 Open Bluetooth Setup Assistant...
+Disable the Bluetooth Setup Assistant.
+
+Open System Preferences  
+Click Bluetooth  
+Click Advanced…  
+Uncheck Open Bluetooth Setup Assistant at startup if no keyboard is detected  
+Uncheck Open Bluetooth Setup Assistant at startup if no mouse or trackpad is detected  
+Click "OK"
+
 
 # tdm-via-ssh
 Target Display Mode via SSH
