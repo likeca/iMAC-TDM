@@ -15,7 +15,7 @@ Click "OK"
 tell application "System Events" to key code 144 using command down
 ```
 
-# 3. Use AddAppToDock.sh in Applescript to add TDM application to Dock
+# 3. Use Applescript to add TDM application to Dock
 ```
 my add_item_to_dock(choose file of type {"APPL"} with prompt "Choose an application to add to the Dock:")
 
