@@ -1,4 +1,4 @@
-# Disable iMac bluetooth keyboard auto-request
+# 1. Disable iMac bluetooth keyboard auto-request
 Open the Bluetooth pane in System Preferences. Click the Advanced button. Uncheck the boxes marked  
 Open Bluetooth Setup Assistant...
 Disable the Bluetooth Setup Assistant.
@@ -10,12 +10,12 @@ Uncheck Open Bluetooth Setup Assistant at startup if no keyboard is detected
 Uncheck Open Bluetooth Setup Assistant at startup if no mouse or trackpad is detected  
 Click "OK"
 
-# Use Applescript to save to application
+# 2. Use Applescript to save to application
 ```
 tell application "System Events" to key code 144 using command down
 ```
 
-# Use AddAppToDock.sh in Applescript to add TDM application to Dock
+# 3. Use AddAppToDock.sh in Applescript to add TDM application to Dock
 ```
 my add_item_to_dock(choose file of type {"APPL"} with prompt "Choose an application to add to the Dock:")
 
