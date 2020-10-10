@@ -10,6 +10,13 @@ Uncheck Open Bluetooth Setup Assistant at startup if no keyboard is detected
 Uncheck Open Bluetooth Setup Assistant at startup if no mouse or trackpad is detected  
 Click "OK"
 
+# Use Applescript to save to application
+```
+tell application "System Events" to key code 144 using command down
+```
+
+# Use AddAppToDock.sh in Applescript to add TDM application to Dock
+
 
 # tdm-via-ssh
 Target Display Mode via SSH
