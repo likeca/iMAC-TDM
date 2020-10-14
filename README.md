@@ -112,3 +112,25 @@ Slightly modified from http://aaronrutley.com/target-display-mode-via-ssh/
 `imac shutdown`
 
 `imac ssh`: ssh into iMac
+
+
+https://medium.com/@gutofoletto/how-to-share-your-imac-keyboard-on-target-display-mode-abfaf10a7992
+```
+#!/usr/bin/env bash
+# Disable BT on remote machine and enable it on local machine, so KB/Mouse reconnect to local machine.  
+#ensure local bluetooth is off  
+blueutil off  
+#disable imac bluetooth  
+ssh user@imac.local '/usr/local/bin/blueutil off'  
+#enable local bluetooth  
+blueutil on  
+```
+
+```
+#!/usr/bin/env bash  
+# Disable BT on local machine and enable it on remote machine, so KB/Mouse reconnect to remote machine.  
+#ensure local bluetooth is off  
+blueutil off  
+#enable imac bluetooth  
+ssh user@imac.local '/usr/local/bin/blueutil on'  
+```
